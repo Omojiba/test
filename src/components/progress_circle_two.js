@@ -1,11 +1,12 @@
 import React from 'react';
-import './circle.css'
+import './circle_two.css';
 
-function ProgressCircle() {
+function ProgressCircleTwo() {
 
     let number = document.getElementById('number');
     let counter = 0;
     setInterval(() => {
+
         if(counter == 25){clearInterval();
         }
         else{
@@ -16,14 +17,14 @@ function ProgressCircle() {
   return (
       <div className='container'>
          <div className='progress_circle'>
-                <div className='outer_circle'>
-                  <div className='inner_circle'>
-                      <h3 id='number'></h3>
+                <div className='outer_circle_two'>
+                  <div className='inner_circle_two'>
+                      <h3 id='number_two'></h3>
                   </div>
                 </div>
 
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-         <circle cx="45" cy="45" r="38" stroke-linecap="round" />
+         <circle className='circle' cx="45" cy="45" r="38" stroke-linecap="round" />
  </svg>
         </div>
 
@@ -34,4 +35,4 @@ function ProgressCircle() {
   )
 }
 
-export default ProgressCircle
+export default ProgressCircleTwo
