@@ -47,7 +47,7 @@
     gap: 35px;
 }
 .target{
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
     padding: 2px 30px;
     display: flex;
     justify-content: space-between;
@@ -55,14 +55,27 @@
 .target h2{
     font-size: 14px;
     color: black;
+    margin-bottom: 5px;
 }
 .target h3{
     font-size: 12px;
+    font-weight: 800;
+    margin-top: 0;
 }
 .target_textbox{
-    border-right: 1px solid black;
-    padding-right: 50px;
+    padding-right: 65px; 
 }
+.target_textbox::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 0.1px;
+    height: 50px;
+    background: black;
+    transform: translate(159px, -55px)
+    
+}
+
 .weekly_target_one{
     background-color: white;
     border-radius: 5px;
@@ -72,11 +85,14 @@
     background-color: #E19133;
     border-radius: 5px;
 }
+.weekly_target_two .target_textbox h3{
+    color: white;
+}
 .tasks_container{
     background-color: white;
     padding: 25px;
     padding-top: 10px;
-    box-shadow: 2px 1px 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
     border-radius: 5px; 
 }
 .task_flexbox{
@@ -97,12 +113,141 @@
     margin: 0;
     padding-top: 5px;
 }
+
+
+
 /* Left */
 .left{
    background-color: white; 
+   padding: 25px 30px;
 }
+.logo_flexbox{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.logo_flexbox h2{
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+.logo_flexbox p{
+    font-size: 12px;
+    margin: 0;
+    padding-top: 5px;
+}
+.icon_flexbox{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+#dashboard{
+    margin-top: 45px;
+}
+.icon_flexbox h2{
+    font-size: 12px;
+}
+.icon_flexbox p{
+    font-size: 12px;
+    color: gray;
+}
+.leftside_first_container::after{
+    content: '';
+    display: block;
+    width: 200px;
+    height: 0.1px;
+    background: gray;
+    transform: translateX(30px);  
+}
+.posts h1{
+    font-size: 13px;
+}
+.posts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0 5px;   
+}
+.icon_flexbox_two{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+.icon_flexbox_two p{
+    font-size: 12px;
+    color: gray;
+}
+.leftside_second_container::after{
+    content: '';
+    display: block;
+    width: 200px;
+    height: 0.1px;
+    background: gray;
+    transform: translateX(30px);  
+}
+
+
 
 /* Right */
 .right{
     background-color: white;
+    padding: 20px 30px;
+}
+.username_flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.username h1{
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+.username h2{
+    font-size: 12px;
+    color: gray;
+    font-weight: 750;
+    margin-top: 0;
+}
+
+.picture_flexbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+.picture_flexbox h1{
+    font-size: 12px;
+    color: gray;  
+}
+.account_flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.metric_item h1{
+      font-size: 12px;
+      text-align: center;
+      font-weight: 800;
+}
+.metric_item h2{
+    font-size: 10px;
+    text-align: center;
+    font-weight: 700;
+    color: gray;
+}
+.logout_flexbox{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 270px;
+}
+.logout_flexbox h1{
+    color: #E13333;
+    font-size: 12px;
+    margin-top: 5px;
 }

@@ -12,7 +12,7 @@ function ProgressCircle() {
         counter += 1;
         number.innerHTML = counter + '%';}
 
-    }, 30);
+    },50);
   return (
       <div className='container'>
          <div className='progress_circle'>
