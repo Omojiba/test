@@ -3,23 +3,12 @@ import './circle_two.css';
 
 function ProgressCircleTwo() {
 
-    let number = document.getElementById('number_two');
-    let counter = 0;
-    setInterval(() => {
-
-        if(counter == 25){clearInterval();
-        }
-        else{
-        counter += 1;
-        number.innerHTML = counter + '%';}
-
-    },50);
   return (
       <div className='container'>
          <div className='progress_circle'>
                 <div className='outer_circle_two'>
                   <div className='inner_circle_two'>
-                      <h3 id='number_two'></h3>
+                      <h3 id='number_two'>25%</h3>
                   </div>
                 </div>
 
@@ -28,9 +17,6 @@ function ProgressCircleTwo() {
  </svg>
         </div>
 
-        <script>
-            
-        </script>
      </div>
   )
 }
