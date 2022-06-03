@@ -18,7 +18,7 @@ function ProgressCircle() {
          <div className='progress_circle'>
                 <div className='outer_circle'>
                   <div className='inner_circle'>
-                      <h3 id='number'></h3>
+                      <h3 id='number'>{Number}</h3>
                   </div>
                 </div>
 
