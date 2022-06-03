@@ -3,7 +3,7 @@ import './circle_two.css';
 
 function ProgressCircleTwo() {
 
-    let number = document.getElementById('number');
+    let number = document.getElementById('number_two');
     let counter = 0;
     setInterval(() => {
 
