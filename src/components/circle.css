@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress_circle{
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+.outer_circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+.inner_circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+#number{
+    font-weight: 700;
+    color: #E19133;
+}
+svg{
+    /* transform: translate(-5px, -85px); */
+    position: absolute;
+    top: -75px;
+    bottom: 0;
+    left: -5px;
+    right:0;
+    transform: rotate(-90deg);
+}
+circle{
+    fill: none;
+    stroke: #E19133;
+    stroke-width: 4px;
+    stroke-dasharray: 250;
+    stroke-dashoffset: 250;
+    animation: anim 2s linear forwards;   
+}
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 190;
+    }
+}
